@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none">
+  <defs>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="shadowDoc" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="230" cy="275" rx="130" ry="14" fill="#cbd5e1" opacity="0.6"/>
+
+  <g filter="url(#shadowDoc)">
+    <!-- Base Platform (Black Weighted Base) -->
+    <rect x="140" y="240" width="170" height="26" rx="6" fill="url(#docGrad)" stroke="#334155" stroke-width="1.5"/>
+    <!-- Control Buttons on Base -->
+    <circle cx="170" cy="253" r="4" fill="#3b82f6"/>
+    <circle cx="185" cy="253" r="3.5" fill="#64748b"/>
+    <circle cx="200" cy="253" r="3.5" fill="#64748b"/>
+    <circle cx="215" cy="253" r="3.5" fill="#22c55e"/>
+
+    <!-- Articulated Mechanical Arm (Vertical Column) -->
+    <rect x="155" y="110" width="16" height="135" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <!-- Articulation Joint Elbow (Middle) -->
+    <circle cx="163" cy="115" r="12" fill="#334155"/>
+    <circle cx="163" cy="115" r="5" fill="#64748b"/>
+
+    <!-- Horizontal Overhead Boom Arm -->
+    <rect x="160" y="105" width="115" height="16" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+
+    <!-- Camera Head Unit (Down-facing) -->
+    <rect x="255" y="105" width="38" height="42" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <!-- Lens Element pointing downward -->
+    <rect x="264" y="147" width="20" height="8" rx="2" fill="#09090b"/>
+    <circle cx="274" cy="151" r="5" fill="#38bdf8"/>
+    <!-- Built-in LED Ring Lamp around lens -->
+    <circle cx="260" cy="138" r="2.5" fill="#fef08a"/>
+    <circle cx="288" cy="138" r="2.5" fill="#fef08a"/>
+  </g>
+</svg>

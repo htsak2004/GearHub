@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none">
+  <defs>
+    <linearGradient id="printerBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadowPrinter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="200" cy="280" rx="140" ry="12" fill="#cbd5e1" opacity="0.6"/>
+
+  <g filter="url(#shadowPrinter)">
+    <!-- Main Printer Chassis -->
+    <rect x="75" y="110" width="250" height="150" rx="14" fill="url(#printerBody)"/>
+    
+    <!-- Top Scanner Flatbed / Feeder -->
+    <rect x="90" y="80" width="220" height="35" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <rect x="115" y="70" width="170" height="14" rx="3" fill="#0f172a"/>
+    <!-- Paper feed document slit -->
+    <line x1="130" y1="77" x2="270" y2="77" stroke="#64748b" stroke-width="2"/>
+
+    <!-- Front Control Panel Display (Angled) -->
+    <rect x="90" y="125" width="85" height="50" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="98" y="133" width="50" height="34" rx="4" fill="#0284c7" opacity="0.3"/>
+    <circle cx="160" cy="142" r="4" fill="#22c55e"/>
+    <circle cx="160" cy="158" r="4" fill="#38bdf8"/>
+
+    <!-- Paper Output Tray -->
+    <rect x="100" y="195" width="200" height="50" rx="6" fill="#020617"/>
+    <!-- Printed Document Paper Peeking Out -->
+    <rect x="120" y="198" width="160" height="24" rx="2" fill="#f8fafc"/>
+    <line x1="135" y1="206" x2="220" y2="206" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="135" y1="214" x2="200" y2="214" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Lower Cassette Paper Tray A3 -->
+    <rect x="90" y="248" width="220" height="12" rx="3" fill="#1e293b"/>
+    <rect x="180" y="249" width="40" height="4" rx="2" fill="#64748b"/>
+
+    <!-- Status Power Light -->
+    <circle cx="305" cy="125" r="3" fill="#38bdf8"/>
+  </g>
+</svg>

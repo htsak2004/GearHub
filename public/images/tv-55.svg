@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none">
+  <defs>
+    <linearGradient id="tvScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="shadowTV" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow underneath -->
+  <ellipse cx="200" cy="275" rx="140" ry="12" fill="#cbd5e1" opacity="0.6"/>
+
+  <g filter="url(#shadowTV)">
+    <!-- TV Bezel / Frame -->
+    <rect x="50" y="60" width="300" height="180" rx="8" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <!-- Glass Display Screen -->
+    <rect x="56" y="66" width="288" height="168" rx="4" fill="url(#tvScreen)"/>
+    
+    <!-- Screen Glass Light Reflection Diagonal -->
+    <path d="M60 66 L210 66 L120 234 L60 234 Z" fill="#ffffff" opacity="0.05"/>
+
+    <!-- Brand Logo Dot bottom bezel -->
+    <circle cx="200" cy="237" r="1.5" fill="#e2e8f0"/>
+
+    <!-- Desktop Pedestal Stand -->
+    <!-- Vertical stem -->
+    <rect x="190" y="240" width="20" height="25" fill="#18181b"/>
+    <!-- Angled Arc Base -->
+    <path d="M140 268 C170 260, 230 260, 260 268 L265 272 C230 265, 170 265, 135 272 Z" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  </g>
+</svg>

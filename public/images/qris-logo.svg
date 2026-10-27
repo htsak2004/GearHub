@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50" fill="none">
+  <!-- QRIS stylized vector badge -->
+  <rect x="0" y="0" width="160" height="50" rx="8" fill="#ffffff"/>
+  <g transform="translate(10, 8)">
+    <!-- QRIS Logo Text & Box Matrix -->
+    <path d="M12 4 H2 V14 H12 V4 Z M10 6 V12 H4 V6 H10 Z" fill="#000000"/>
+    <rect x="6" y="8" width="2" height="2" fill="#000000"/>
+
+    <path d="M30 4 H20 V14 H30 V4 Z M28 6 V12 H22 V6 H28 Z" fill="#000000"/>
+    <rect x="24" y="8" width="2" height="2" fill="#000000"/>
+
+    <path d="M12 22 H2 V32 H12 V22 Z M10 24 V30 H4 V24 H10 Z" fill="#000000"/>
+    <rect x="6" y="26" width="2" height="2" fill="#000000"/>
+
+    <!-- Bold QRIS text -->
+    <text x="38" y="24" fill="#000000" font-family="'Arial Black', sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5">QRIS</text>
+    <path d="M102 12 L108 24 H104 L102.5 21 H98.5 L97 24 H93 L99 12 H102 Z" fill="#ea2227"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" fill="none">
+  <!-- Background transparent -->
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cableGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="200" cy="265" rx="140" ry="16" fill="#cbd5e1" opacity="0.6"/>
+
+  <!-- Main Toolbox Body -->
+  <g filter="url(#softShadow)">
+    <rect x="70" y="110" width="260" height="135" rx="14" fill="url(#boxGrad)"/>
+    
+    <!-- Top Tray Rim -->
+    <rect x="62" y="100" width="276" height="22" rx="6" fill="#334155"/>
+    
+    <!-- Heavy Duty Latches (Yellow Accent) -->
+    <rect x="110" y="112" width="28" height="32" rx="4" fill="url(#accentYellow)"/>
+    <rect x="115" y="120" width="18" height="12" rx="2" fill="#78350f"/>
+
+    <rect x="262" y="112" width="28" height="32" rx="4" fill="url(#accentYellow)"/>
+    <rect x="267" y="120" width="18" height="12" rx="2" fill="#78350f"/>
+
+    <!-- Central Handle Arch -->
+    <path d="M150 100 V 70 C150 62 158 55 166 55 H234 C242 55 250 62 250 70 V 100" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+    <rect x="175" y="49" width="50" height="14" rx="7" fill="url(#accentYellow)"/>
+
+    <!-- Inside cables / equipment peaking out -->
+    <!-- Coil of Blue Audio Cable -->
+    <path d="M120 95 C120 75, 170 70, 190 92" stroke="url(#cableGrad)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="120" cy="95" r="7" fill="#60a5fa"/>
+
+    <!-- Adapter / Gaffer Tape Roll -->
+    <ellipse cx="225" cy="88" rx="22" ry="12" fill="#64748b"/>
+    <ellipse cx="225" cy="88" rx="12" ry="6" fill="#1e293b"/>
+
+    <!-- Label Plate -->
+    <rect x="155" y="165" width="90" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="200" y="182" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">GEARHUB</text>
+    <text x="200" y="192" fill="#64748b" font-family="sans-serif" font-size="8" text-anchor="middle">EVENT KIT</text>
+
+    <!-- Side Handles -->
+    <rect x="52" y="145" width="10" height="35" rx="3" fill="#475569"/>
+    <rect x="338" y="145" width="10" height="35" rx="3" fill="#475569"/>
+  </g>
+</svg>

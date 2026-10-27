@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none">
+  <defs>
+    <linearGradient id="legGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowTripod" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Shadows under 3 feet -->
+  <ellipse cx="110" cy="295" rx="20" ry="6" fill="#cbd5e1" opacity="0.6"/>
+  <ellipse cx="200" cy="285" rx="16" ry="5" fill="#cbd5e1" opacity="0.5"/>
+  <ellipse cx="290" cy="295" rx="20" ry="6" fill="#cbd5e1" opacity="0.6"/>
+
+  <g filter="url(#shadowTripod)">
+    <!-- Tripod Head & Pan Bar -->
+    <rect x="182" y="35" width="36" height="18" rx="4" fill="#0f172a"/>
+    <rect x="175" y="53" width="50" height="24" rx="5" fill="#1e293b"/>
+    <!-- Pan handle pointing right -->
+    <path d="M215 62 L280 40" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+    <rect x="270" y="32" width="22" height="12" rx="4" fill="#0f172a" transform="rotate(-18 270 32)"/>
+    <!-- Red Accent Collar (Manfrotto Signature) -->
+    <circle cx="200" cy="78" r="14" fill="#dc2626"/>
+
+    <!-- Center Column -->
+    <rect x="194" y="78" width="12" height="60" rx="3" fill="url(#legGrad)"/>
+    <!-- Spider / Apex Casting -->
+    <path d="M170 120 H230 L218 145 H182 Z" fill="#0f172a"/>
+
+    <!-- Left Leg -->
+    <path d="M180 140 L110 290" stroke="url(#legGrad)" stroke-width="12" stroke-linecap="round"/>
+    <!-- Center Back Leg -->
+    <path d="M200 145 L200 280" stroke="#1e293b" stroke-width="9" stroke-linecap="round"/>
+    <!-- Right Leg -->
+    <path d="M220 140 L290 290" stroke="url(#legGrad)" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Leg Lock Collars -->
+    <rect x="150" y="195" width="16" height="12" rx="3" fill="#0f172a" transform="rotate(25 150 195)"/>
+    <rect x="128" y="245" width="16" height="12" rx="3" fill="#0f172a" transform="rotate(25 128 245)"/>
+
+    <rect x="234" y="195" width="16" height="12" rx="3" fill="#0f172a" transform="rotate(-25 234 195)"/>
+    <rect x="256" y="245" width="16" height="12" rx="3" fill="#0f172a" transform="rotate(-25 256 245)"/>
+
+    <!-- Rubber Feet -->
+    <ellipse cx="110" cy="290" rx="8" ry="5" fill="#020617"/>
+    <ellipse cx="200" cy="280" rx="6" ry="4" fill="#020617"/>
+    <ellipse cx="290" cy="290" rx="8" ry="5" fill="#020617"/>
+  </g>
+</svg>

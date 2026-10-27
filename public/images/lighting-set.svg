@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none">
+  <defs>
+    <linearGradient id="ledGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <filter id="shadowLight" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Shadows under stands -->
+  <ellipse cx="130" cy="290" rx="50" ry="10" fill="#cbd5e1" opacity="0.6"/>
+  <ellipse cx="270" cy="290" rx="50" ry="10" fill="#cbd5e1" opacity="0.6"/>
+
+  <g filter="url(#shadowLight)">
+    <!-- Light Stand 1 (Left) -->
+    <!-- Tripod Base -->
+    <path d="M130 250 L90 290 M130 250 L130 288 M130 250 L170 290" stroke="#1e293b" stroke-width="5" stroke-linecap="round"/>
+    <!-- Vertical Center Column -->
+    <line x1="130" y1="120" x2="130" y2="250" stroke="#334155" stroke-width="7"/>
+    <rect x="126" y="180" width="8" height="10" rx="2" fill="#0f172a"/>
+    <!-- LED Panel 1 -->
+    <rect x="90" y="55" width="80" height="65" rx="6" fill="#18181b"/>
+    <rect x="98" y="63" width="64" height="49" rx="3" fill="url(#ledGlow)"/>
+    <!-- Grid pattern inside LED panel -->
+    <line x1="98" y1="75" x2="162" y2="75" stroke="#fef08a" stroke-width="1" opacity="0.5"/>
+    <line x1="98" y1="87" x2="162" y2="87" stroke="#fef08a" stroke-width="1" opacity="0.5"/>
+    <line x1="98" y1="99" x2="162" y2="99" stroke="#fef08a" stroke-width="1" opacity="0.5"/>
+    <!-- Barn Doors Left Panel -->
+    <polygon points="90,55 70,45 70,120 90,120" fill="#0f172a"/>
+    <polygon points="170,55 190,45 190,120 170,120" fill="#0f172a"/>
+    <polygon points="90,55 100,35 160,35 170,55" fill="#27272a"/>
+
+    <!-- Light Stand 2 (Right) -->
+    <path d="M270 250 L230 290 M270 250 L270 288 M270 250 L310 290" stroke="#1e293b" stroke-width="5" stroke-linecap="round"/>
+    <line x1="270" y1="120" x2="270" y2="250" stroke="#334155" stroke-width="7"/>
+    <rect x="266" y="180" width="8" height="10" rx="2" fill="#0f172a"/>
+    <!-- LED Panel 2 (Angled / Softbox style) -->
+    <rect x="230" y="55" width="80" height="65" rx="6" fill="#18181b"/>
+    <rect x="238" y="63" width="64" height="49" rx="3" fill="#ffffff"/>
+    <!-- Barn Doors Right Panel -->
+    <polygon points="230,55 210,45 210,120 230,120" fill="#0f172a"/>
+    <polygon points="310,55 330,45 330,120 310,120" fill="#0f172a"/>
+    <polygon points="230,55 240,35 300,35 310,55" fill="#27272a"/>
+  </g>
+</svg>
